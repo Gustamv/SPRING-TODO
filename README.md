@@ -4,8 +4,8 @@ Descrição
 Este é um aplicativo web simples desenvolvido em Spring Boot para gerenciar tarefas do dia a dia. Ele permite aos usuários criar, editar, excluir e marcar tarefas como concluídas.
 
 Tecnologias Utilizadas
-Spring Boot: Framework Java para desenvolvimento rápido de aplicações web.
-JPA: Para persistência de dados em um banco de dados relacional.
+. Spring Boot: Framework Java para desenvolvimento rápido de aplicações web.
+. JPA: Para persistência de dados em um banco de dados relacional.
 Thymeleaf: Motor de templates para renderizar as páginas HTML.
 Bootstrap: Framework CSS para estilização.
 Pré-requisitos
