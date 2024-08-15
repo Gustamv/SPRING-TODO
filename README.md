@@ -1,46 +1,36 @@
-
 ## Gerenciador de Tarefas Spring Boot
-Descrição
-Este é um aplicativo web simples desenvolvido em Spring Boot para gerenciar tarefas do dia a dia. Ele permite aos usuários criar, editar, excluir e marcar tarefas como concluídas.
 
-Tecnologias Utilizadas
-. Spring Boot: Framework Java para desenvolvimento rápido de aplicações web.
-. JPA: Para persistência de dados em um banco de dados relacional.
-Thymeleaf: Motor de templates para renderizar as páginas HTML.
-Bootstrap: Framework CSS para estilização.
-Pré-requisitos
-Java Development Kit (JDK): Versão 8 ou superior.
-Maven ou Gradle: Para gerenciamento de dependências.
-Banco de dados relacional: Configure as informações de conexão no arquivo application.properties.
-Instalação
-Clone o repositório:
-Bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Use o código com cuidado.
+### Descrição
+Um aplicativo web simples e intuitivo para gerenciar tarefas diárias. Construído com Spring Boot, este projeto oferece funcionalidades como criação, edição, exclusão e marcação de tarefas como concluídas.
 
-Instale as dependências:
-Bash
-cd seu-repositorio   
+### Arquitetura
+O projeto segue a arquitetura MVC (Model-View-Controller), com o Spring Boot fornecendo a infraestrutura básica. As entidades são persistidas em um banco de dados relacional utilizando JPA. A interface do usuário é construída com Thymeleaf e estilizada com Bootstrap.
 
-mvn clean install  # Se estiver usando Maven
-# Ou
-gradle build      # Se estiver usando Gradle
-Use o código com cuidado.
+[Diagrama de classes simplificado aqui]
 
-Execução
-Configure o banco de dados:
-H2 (em memória): Para desenvolvimento rápido, o H2 é uma boa opção. Configure as propriedades no arquivo application.properties.
-Outro banco de dados: Configure as propriedades de conexão com seu banco de dados (MySQL, PostgreSQL, etc.) no arquivo application.properties.
-Execute a aplicação:
-Bash
-mvn spring-boot:run  # Se estiver usando Maven
-# Ou
-./gradlew bootRun    # Se estiver usando Gradle
-Use o código com cuidado.
+### Tecnologias
+* **Frontend:** HTML, CSS (Bootstrap), Thymeleaf
+* **Backend:** Java, Spring Boot, JPA
+* **Banco de dados:** [MySQL/PostgreSQL/etc.]
 
-Uso
-Acesse a aplicação: Abra um navegador e vá para http://localhost:8080.
-Crie uma nova tarefa: Clique no botão "Nova tarefa" e preencha o formulário.
-Edite uma tarefa: Clique no botão "Editar" na linha da tarefa desejada.
-Exclua uma tarefa: Clique no botão "Excluir" na linha da tarefa desejada.
-Marque uma tarefa como concluída: Clique no botão "Concluir" na linha da tarefa desejada.
+### Instalação
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   cd seu-repositorio
+   mvn clean install  # Maven
+   gradle build      # Gradle
+   ```
+
+### Funcionalidades
+
+* Criação de tarefas: Adicione novas tarefas com título, descrição e data de vencimento.
+* Edição de tarefas: Modifique as informações de tarefas existentes.
+* Exclusão de tarefas: Remova tarefas indesejadas.
+* Marcação como concluída: Marque tarefas como concluídas para acompanhar o progresso.
+* Busca: Pesquise por tarefas usando palavras-chave.
+* Filtros: Filtre tarefas por status (a fazer, em andamento, concluídas), data de vencimento, etc.
